@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npx tsc:*)",
-      "Bash(npx tsc)"
+      "Bash(npx tsc)",
+      "Bash(taskkill //F //PID 1952)",
+      "Bash(netstat:*)"
     ],
     "deny": [],
     "ask": []
