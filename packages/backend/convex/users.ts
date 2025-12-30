@@ -11,9 +11,9 @@ export const getMany = query({
 export const add = mutation({
   args: {},
   handler: async (ctx) => {
-    const indentity = ctx.auth.getUserIdentity();
+    const identity = await ctx.auth.getUserIdentity();
 
-    if (!indentity) {
+    if (!identity) {
       throw new Error("Not authenticated");
     }
 
