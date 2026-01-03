@@ -19,6 +19,8 @@ export const add = mutation({
 
     const orgId = identity.orgId as string;
 
+    throw new Error("tracing test");
+
     if (!orgId) {
       throw new Error("No organization ID found in user identity");
     }
